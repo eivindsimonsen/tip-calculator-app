@@ -25,6 +25,12 @@ function Tip() {
           type="button"
           value="Custom"
           id="tip-custom"
+          onClick={() => {
+            const customValue = parseFloat(prompt("Enter a custom tip percentage:"));
+            if (!isNaN(customValue)) {
+              getValue(customValue);
+            }
+          }}
         />
       </div>
     </div>
