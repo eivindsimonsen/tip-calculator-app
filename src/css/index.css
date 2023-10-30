@@ -60,8 +60,16 @@ input:is([type="button"]) {
   height: 45px;
 }
 
+input:is([type="button"]):hover {
+  background-color: var(--primary-cyan);
+  color: var(--dark-cyan);
+  cursor: pointer;
+}
+
 input {
   font-size: var(--font-size);
+  color: var(--dark-cyan);
+  outline: none;
 }
 
 /* Calculation */
@@ -82,6 +90,7 @@ input {
 #tip-custom {
   background-color: var(--verylightgray-cyan);
   color: var(--dark-cyan);
+  text-align: center;
 }
 
 .input-container {
@@ -95,6 +104,12 @@ input {
   background-color: var(--verylightgray-cyan);
   padding: 0px 10px;
   margin-top: 5px;
+}
+
+.input-wrapper:hover,
+#tip-custom:hover {
+  cursor: pointer;
+  outline: 2px solid var(--primary-cyan);
 }
 
 /* Results */
