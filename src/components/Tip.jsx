@@ -1,46 +1,26 @@
+import { useState } from "react";
+
 function Tip() {
-  const getValue = (e) => {
-    const valueWithPercentage = e.target.value; // Get the value with "%"
-    const valueWithoutPercentage = valueWithPercentage.replace("%", ""); // Remove the "%"
-    const numericValue = parseFloat(valueWithoutPercentage); // Parse it as a number
-    console.log(numericValue); // Display the numeric value
+  const [tipValue, setTipValue] = useState(0);
+
+  const getValue = (value) => {
+    setTipValue(value);
   };
 
   return (
     <div className="input-container">
       <label htmlFor="tip">Select Tip %</label>
       <div id="tip">
-        <input
-          type="button"
-          value="5%"
-          onClick={getValue}
-        />
-        <input
-          type="button"
-          value="10%"
-          onClick={getValue}
-        />
-        <input
-          type="button"
-          value="15%"
-          onClick={getValue}
-        />
-        <input
-          type="button"
-          value="25%"
-          onClick={getValue}
-        />
-        <input
-          type="button"
-          value="50%"
-          onClick={getValue}
-        />
-        {/* <input
-          type="text"
-          placeholder="0"
-          id="tip-custom"
-          inputMode="numeric"
-        /> */}
+        {[5, 10, 15, 25, 50].map((value) => (
+          <input
+            key={value}
+            type="button"
+            value={`${value}%`}
+            onClick={() => getValue(value)}
+            className={tipValue === value ? "active" : ""}
+          />
+        ))}
+
         <input
           type="button"
           value="Custom"
