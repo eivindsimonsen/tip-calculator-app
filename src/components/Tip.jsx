@@ -35,6 +35,12 @@ function Tip() {
           value="50%"
           onClick={getValue}
         />
+        {/* <input
+          type="text"
+          placeholder="0"
+          id="tip-custom"
+          inputMode="numeric"
+        /> */}
         <input
           type="button"
           value="Custom"

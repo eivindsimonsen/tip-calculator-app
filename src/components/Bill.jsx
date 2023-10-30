@@ -10,10 +10,11 @@ function Bill() {
           alt="Image"
         />
         <input
-          type="number"
+          type="text"
           id="bill"
           placeholder="0"
           inputMode="numeric"
+          autoFocus
         />
       </div>
     </div>

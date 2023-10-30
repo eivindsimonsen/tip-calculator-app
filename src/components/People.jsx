@@ -10,7 +10,7 @@ function People() {
           alt=""
         />
         <input
-          type="number"
+          type="text"
           id="people"
           placeholder="0"
           inputMode="numeric"
