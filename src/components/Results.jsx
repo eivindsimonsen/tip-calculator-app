@@ -13,7 +13,7 @@ function Results() {
           <p>Total</p>
           <span className="text-span">/ person</span>
         </div>
-        <span className="number-span">$4.27</span>
+        <span className="number-span">$32.79</span>
       </div>
       <button className="cta reset-btn">RESET</button>
     </>
