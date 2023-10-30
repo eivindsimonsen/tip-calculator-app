@@ -5,12 +5,18 @@
 
   --darkgray-cyan: hsl(186, 14%, 43%);
   --gray-cyan: hsl(184, 14%, 56%);
-  --lightgray-cyan: hsl(185, 41%, 84%);
-  --verylightgray-cyan: hsl(189, 41%, 97%);
+  --lightgray-cyan: rgb(197, 228, 231);
+  --verylightgray-cyan: hsl(180, 37%, 97%);
   --white: hsl(0, 0%, 100%);
 
   /* Fonts */
   --font-size: clamp(1rem, 2.5vw, 1.5rem);
   --font-family: "Space Mono", sans-serif;
   --font-weight: 700;
+
+  /* Shadows */
+
+  --shadow-color: 186deg 21% 58%;
+
+  --shadow-elevation-high: 0px 0.3px 0.3px hsl(var(--shadow-color) / 0.27), 0px 1.5px 1.7px -0.4px hsl(var(--shadow-color) / 0.27), 0px 2.7px 3px -0.7px hsl(var(--shadow-color) / 0.27), 0.1px 4.5px 5px -1.1px hsl(var(--shadow-color) / 0.27), 0.1px 7.1px 7.9px -1.5px hsl(var(--shadow-color) / 0.27), 0.1px 11.1px 12.4px -1.8px hsl(var(--shadow-color) / 0.26), 0.2px 16.9px 18.9px -2.2px hsl(var(--shadow-color) / 0.26), 0.3px 24.9px 27.8px -2.5px hsl(var(--shadow-color) / 0.26);
 }
