@@ -2,6 +2,7 @@ import logo from "./assets/images/logo.svg";
 import Bill from "./components/Bill";
 import Tip from "./components/Tip";
 import People from "./components/People";
+import Results from "./components/Results";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
           <People />
         </section>
         <section className="result">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, harum labore quia a quis cumque tempora aliquam praesentium, odio voluptate veritatis ipsum nemo totam? Temporibus cum aperiam harum laboriosam quos ad debitis ut deserunt sed quibusdam. Ea iure fugit laboriosam vel, consequuntur a, quasi eius doloremque, facilis ad aliquid sapiente!</p>
+          <Results />
         </section>
       </main>
     </div>
