@@ -1,5 +1,103 @@
 @import "variables.css";
 
+/* Globals */
 body {
   background-color: var(--lightgray-cyan);
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+input {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+}
+
+.wrapper {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  max-width: 1000px;
+  margin: 0px auto;
+  gap: 50px;
+}
+
+header {
+  text-align: center;
+  /* margin-top: 50px; */
+}
+
+main {
+  background-color: var(--white);
+  padding: 40px;
+  border-radius: 20px;
+  margin: 0px 20px;
+  display: flex;
+  gap: 80px;
+}
+
+main > * {
+  flex-basis: 50%;
+}
+
+label {
+  color: var(--gray-cyan);
+}
+
+input:not([type="button"]) {
+  padding: 5px 0px;
+  border: none;
+  background-color: var(--verylightgray-cyan);
+  width: 100%;
+  text-align: right;
+}
+
+input:is([type="button"]) {
+  background-color: var(--dark-cyan);
+  color: var(--white);
+  border-radius: 5px;
+  border: none;
+  height: 45px;
+}
+
+input {
+  font-size: var(--font-size);
+}
+
+/* Calculation */
+
+.calculation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#tip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 15px;
+}
+
+#tip-custom {
+  background-color: var(--verylightgray-cyan);
+  color: var(--dark-cyan);
+}
+
+.input-container {
+  margin: 20px 0px;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  border-radius: 7px;
+  background-color: var(--verylightgray-cyan);
+  padding: 0px 10px;
+  margin-top: 5px;
+}
+
+/* Results */
+.result {
+  background-color: var(--dark-cyan);
 }
