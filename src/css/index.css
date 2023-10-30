@@ -34,6 +34,7 @@ main {
   margin: 0px 20px;
   display: flex;
   gap: 80px;
+  box-shadow: var(--shadow-elevation-high);
 }
 
 main > * {
@@ -123,7 +124,7 @@ input {
   flex-direction: column;
   background-color: var(--dark-cyan);
   padding: 40px;
-  border-radius: 15px;
+  border-radius: 20px;
   min-width: 335px;
 }
 
@@ -151,4 +152,16 @@ p {
 
 .reset-btn {
   margin-top: auto;
+  padding: 15px;
+  border: none;
+  border-radius: 7px;
+  background-color: var(--primary-cyan);
+  color: var(--dark-cyan);
+  font-size: 1.2rem;
+  font-weight: var(--font-weight);
+}
+
+.reset-btn:hover {
+  cursor: pointer;
+  background-color: var(--lightgray-cyan);
 }
