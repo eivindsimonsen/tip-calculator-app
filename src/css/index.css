@@ -93,6 +93,11 @@ input {
   text-align: center;
 }
 
+.active {
+  background-color: var(--primary-cyan) !important;
+  color: var(--dark-cyan) !important;
+}
+
 .input-container {
   margin: 20px 0px;
 }
@@ -114,5 +119,36 @@ input {
 
 /* Results */
 .result {
+  display: flex;
+  flex-direction: column;
   background-color: var(--dark-cyan);
+  padding: 40px;
+  border-radius: 15px;
+  min-width: 335px;
+}
+
+.result-amount,
+.result-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-span {
+  font-size: 1rem;
+  color: var(--gray-cyan);
+}
+
+.number-span {
+  font-size: 3rem;
+  color: var(--primary-cyan);
+}
+
+p {
+  margin: 0;
+  color: var(--white);
+}
+
+.reset-btn {
+  margin-top: auto;
 }
