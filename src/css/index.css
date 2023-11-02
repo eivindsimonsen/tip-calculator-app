@@ -15,7 +15,7 @@ input {
 
 .wrapper {
   display: grid;
-  place-content: center;
+  /* place-content: center; */
   min-height: 100vh;
   max-width: 1000px;
   margin: 0px auto;
@@ -24,16 +24,16 @@ input {
 
 header {
   text-align: center;
-  /* margin-top: 50px; */
+  margin-top: 60px;
 }
 
 main {
   background-color: var(--white);
-  padding: 40px;
+  padding: 10px 25px;
   border-radius: 20px;
-  margin: 0px 20px;
   display: flex;
-  gap: 80px;
+  flex-direction: column;
+  gap: 30px;
   box-shadow: var(--shadow-elevation-high);
 }
 
@@ -73,6 +73,17 @@ input {
   outline: none;
 }
 
+::-moz-selection {
+  /* Code for Firefox */
+  color: var(--white);
+  background: var(--primary-cyan);
+}
+
+::selection {
+  color: var(--white);
+  background: var(--primary-cyan);
+}
+
 /* Calculation */
 
 .calculation {
@@ -83,7 +94,7 @@ input {
 
 #tip {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 15px;
   margin-top: 15px;
 }
@@ -123,9 +134,10 @@ input {
   display: flex;
   flex-direction: column;
   background-color: var(--dark-cyan);
-  padding: 40px;
+  padding: 40px 25px;
   border-radius: 20px;
-  min-width: 335px;
+  gap: 35px;
+  margin-bottom: 50px;
 }
 
 .result-amount,
@@ -141,7 +153,7 @@ input {
 }
 
 .number-span {
-  font-size: 3rem;
+  font-size: clamp(2rem, 1vw, 3rem);
   color: var(--primary-cyan);
 }
 
@@ -151,7 +163,6 @@ p {
 }
 
 .reset-btn {
-  margin-top: auto;
   padding: 15px;
   border: none;
   border-radius: 7px;
@@ -164,4 +175,41 @@ p {
 .reset-btn:hover {
   cursor: pointer;
   background-color: var(--lightgray-cyan);
+}
+
+/* Media queries */
+@media (min-width: 907px) {
+  main {
+    flex-direction: row;
+    margin: 0px 20px;
+    padding: 40px;
+    gap: 80px;
+  }
+
+  #tip {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  header {
+    margin-top: 0px;
+  }
+
+  .reset-btn {
+    margin-top: auto;
+  }
+
+  .result {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 513px) {
+  .result {
+    min-width: 335px;
+    padding: 40px;
+  }
+
+  .wrapper {
+    place-content: center;
+  }
 }
