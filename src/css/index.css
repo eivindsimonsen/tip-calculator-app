@@ -85,6 +85,12 @@ input:is([type="button"]):focus-visible {
   outline: 2px solid var(--primary-cyan);
 }
 
+/* #tip-custom {
+  background-color: var(--verylightgray-cyan);
+  color: var(--dark-cyan);
+  text-align: center;
+} */
+
 ::-moz-selection {
   /* Code for Firefox */
   color: var(--white);
@@ -109,12 +115,6 @@ input:is([type="button"]):focus-visible {
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
   margin-top: 15px;
-}
-
-#tip-custom {
-  background-color: var(--verylightgray-cyan);
-  color: var(--dark-cyan);
-  text-align: center;
 }
 
 .active {

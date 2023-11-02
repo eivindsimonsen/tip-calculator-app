@@ -45,20 +45,19 @@ function Tip() {
           <input
             type="text"
             placeholder="0"
-            onChange={getCustomValue}
-            className="custom-value-input custom-value-input--selected"
             aria-label="Custom Tip Percentage"
             autoComplete="off"
+            className="custom-value-input custom-value-input--selected"
+            onChange={getCustomValue}
           />
         ) : (
           <input
             type="text"
             placeholder="Custom"
-            id="tip-custom"
-            onClick={toggleCustomValue}
-            className="custom-value-input"
             aria-label="Custom Tip Percentage"
             autoComplete="off"
+            className="custom-value-input"
+            onClick={toggleCustomValue}
           />
         )}
       </div>
