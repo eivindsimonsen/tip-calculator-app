@@ -15,7 +15,6 @@ input {
 
 .wrapper {
   display: grid;
-  /* place-content: center; */
   min-height: 100vh;
   max-width: 1000px;
   margin: 0px auto;
@@ -42,7 +41,7 @@ main > * {
 }
 
 label {
-  color: var(--gray-cyan);
+  color: var(--darkgray-cyan);
 }
 
 input:not([type="button"]) {
@@ -58,7 +57,16 @@ input:is([type="button"]) {
   color: var(--white);
   border-radius: 5px;
   border: none;
-  height: 45px;
+  height: 47px;
+}
+
+input.custom-value-input {
+  border-radius: 5px;
+  text-align: center;
+}
+
+input.custom-value-input--selected {
+  outline: 2px solid var(--primary-cyan);
 }
 
 input:is([type="button"]):hover {
@@ -71,6 +79,10 @@ input {
   font-size: var(--font-size);
   color: var(--dark-cyan);
   outline: none;
+}
+
+input:is([type="button"]):focus-visible {
+  outline: 2px solid var(--primary-cyan);
 }
 
 ::-moz-selection {
@@ -178,12 +190,13 @@ p {
 }
 
 /* Media queries */
-@media (min-width: 907px) {
+@media (min-width: 1021px) {
   main {
     flex-direction: row;
     margin: 0px 20px;
     padding: 40px;
-    gap: 80px;
+    gap: 50px;
+    min-width: 900px;
   }
 
   #tip {
