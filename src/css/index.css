@@ -29,7 +29,7 @@ header {
 main {
   background-color: var(--white);
   padding: 10px 25px;
-  border-radius: 20px;
+  border-radius: 20px 20px 0px 0px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -84,12 +84,6 @@ input {
 input:is([type="button"]):focus-visible {
   outline: 2px solid var(--primary-cyan);
 }
-
-/* #tip-custom {
-  background-color: var(--verylightgray-cyan);
-  color: var(--dark-cyan);
-  text-align: center;
-} */
 
 ::-moz-selection {
   /* Code for Firefox */
@@ -147,7 +141,7 @@ input:is([type="button"]):focus-visible {
   flex-direction: column;
   background-color: var(--dark-cyan);
   padding: 40px 25px;
-  border-radius: 20px;
+  border-radius: 15px;
   gap: 35px;
   margin-bottom: 50px;
 }
@@ -197,6 +191,7 @@ p {
     padding: 40px;
     gap: 50px;
     min-width: 900px;
+    border-radius: 20px;
   }
 
   #tip {
