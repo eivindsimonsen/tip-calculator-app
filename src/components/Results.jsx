@@ -1,4 +1,10 @@
+import { useCalculateContext } from "../context/CalculationContext";
+
 function Results() {
+  const { bill, tipValue, people } = useCalculateContext();
+
+  console.log(bill, tipValue, people);
+
   return (
     <>
       <div className="result-amount">

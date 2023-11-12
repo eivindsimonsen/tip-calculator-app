@@ -1,7 +1,8 @@
 import { useState } from "react";
+import { useCalculateContext } from "../context/CalculationContext";
 
 function Tip() {
-  const [tipValue, setTipValue] = useState(0);
+  const { tipValue, setTipValue } = useCalculateContext();
   const [toggleCustom, setToggleCustom] = useState(false);
 
   const getValue = (value) => {
