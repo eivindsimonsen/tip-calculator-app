@@ -1,7 +1,7 @@
 import { useCalculateContext } from "../context/CalculationContext";
 
 function Results() {
-  const { bill, setBill, tipValue, setTipValue, people, setPeople } = useCalculateContext();
+  const { bill, tipValue, people } = useCalculateContext();
 
   function calculateTipAmount(bill, tipPercentage, people) {
     if (!bill || !tipPercentage || !people || people === 0) {
@@ -26,9 +26,7 @@ function Results() {
   const totalAmountPerPerson = calculateTotalPrice(bill, tipValue, people);
 
   const handleReset = () => {
-    setBill(0);
-    setTipValue(0);
-    setPeople(0);
+    window.location.reload();
   };
 
   return (
